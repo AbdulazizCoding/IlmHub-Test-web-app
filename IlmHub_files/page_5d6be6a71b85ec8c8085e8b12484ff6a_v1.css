@@ -1,0 +1,603 @@
+
+
+/* Start:/local/components/harlamoff/home/templates/.default/style.css?16481159577419*/
+.promo__li-ico__pro {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    padding: 2px 10px 2px 15px;
+    background: rgba(159, 229, 249, 0.5);
+    border-radius: 0 5px 0 20px;
+    color: #000000;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.slider__content{
+  min-height: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.test-number__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth__form__title {
+  font-size: 1.4em;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+#fullpage{
+  height: 100%;
+}
+
+#promo__slide-0{
+  background-color: #22b1ff;
+}
+
+#promo__slide-1{
+  background-image: linear-gradient(0deg, #4483cf 0%, #29456d 100%);
+}
+
+#promo__slide-2{
+  background-image: linear-gradient(-180deg, #4481cf 0%, rgb(191, 236, 228) 100%);
+}
+
+#promo__slide-3{
+  background-image: linear-gradient(-180deg, rgb(191, 236, 228) 0%, #FFE6FA 100%);
+}
+
+.ts__container{
+  padding-top: 0 !important;
+  height: 100%;
+}
+
+.slider__img{
+  width: 100%;
+  max-width: 482px;
+}
+
+
+.promo__h1{
+  text-align: left;
+  color: #fff;
+  font-size: 2em;
+  font-weight: normal;
+  font-family: 'BS', sans-serif;
+  line-height: 1;
+}
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.promo__h1 {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.promo__ul{
+  list-style-image: url('/local/templates/main/img/check.svg');
+  color: #fff;
+  letter-spacing: 0.02em;
+  padding: 0 0 0 15px;
+
+}
+
+.promo__ul li{
+  padding: 6px 0;
+}
+
+.promo__ul li a{
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.promo__ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slider__navigation{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 50%;
+    margin-left: -18px;
+    bottom: 40px;
+    width: 35px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url(/local/templates/main/img/arrow_down.svg);
+    background-repeat: no-repeat;
+}
+
+.slider__navigation.navigation-animate{
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: arrowMove 1.2s 4;
+    animation: arrowMove 1.2s 4;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes arrowMove{
+  to {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0.5;
+  }
+}
+
+#fp-nav.right {
+    right: 12px;
+}
+
+#fp-nav {
+    position: fixed;
+    z-index: 1;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#fp-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+#fp-nav ul li{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 7px 0;
+    position: relative;
+    list-style: none;
+}
+
+#fp-nav ul li a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fp-nav ul li .fp-tooltip {
+ display: none;
+}
+
+#fp-nav ul li a span{
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 9px;
+  width: 9px;
+  border: 0;
+  background: rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#fp-nav ul li a.active span{
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 5px;
+    background: transparent;
+    border: 3px solid white;
+}
+
+.flex-v-center-container{
+    position: relative;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.auth__form__sign-in-btn{
+    display: none;
+}
+
+.slider__desctiption {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.text-counter__description {
+  font-size: 16px;
+  color: #5e5c73;
+  padding: 10px 0;
+}
+
+.slider__content .profile__terms {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin: 0 0 40px;
+  color: #b2b6bc;
+}
+
+.slider__bnt-to-test{
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-name: shrink;
+  animation-fill-mode: forwards;
+  max-width: 200px;
+}
+
+ @keyframes shrink {
+    100% {
+      box-shadow: 0 8px  8px  rgba(0, 0, 0, .1),
+             0 16px 16px rgba(0, 0, 0, .1),
+             8px 32px 32px rgba(0, 0, 0, .15),
+             8px 64px 64px rgba(0, 0, 0, .15);
+    }
+  }
+
+  .text-counter-animate{
+    font-size: 3em;
+    color: #5f5d74;
+  }
+
+  .test-number-wrap{
+    text-align: center;
+  }
+
+@media (max-width: 991px) and (min-width: 768px){
+  .promo__h1{
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    line-height: 1.2em;
+  }
+
+  .promo__ul li a{
+    padding: 2px 6px;
+  }
+
+  .promo__ul li {
+    padding: 5px 0;
+  }
+
+  .auth__form{
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px){
+  .slider__bnt-to-test {
+    margin: auto;
+  }
+
+  #fp-nav .fp-show-active.fp-nav__hide-m{
+    display: none !important;
+  }
+
+  .slider__desctiption,
+  .slider__content .profile__terms {
+    display: none;
+  }
+
+
+  .promo__h1{
+    font-size: 1.1em;
+    margin: 20px 0;
+  }
+
+  .slider__content .button--border-thick{
+    margin: 0 auto;
+  }
+
+  .promo__h1{
+    text-align: center;
+  }
+
+  .slider__navigation{
+    bottom: 20px;
+    width: 26px;
+    margin-left: -13px;
+    height: 18px;
+  }
+
+  .slider__img{
+    width: auto;
+    max-width: 100%;
+    max-height: 40vh;
+  }
+
+  .promo__ul{
+    font-size: inherit;
+  }
+
+  .promo__ul li a{
+    padding: 4px 5px;
+  }
+
+  .auth__form__wrap{
+    display: none;
+  }
+
+  .auth__form__sign-in-btn{
+    display: block;
+  }
+
+  .fullpage-wrapper .auth__form{
+    box-shadow: none;
+    background: none;
+  }
+
+  .fullpage-wrapper .auth__form:hover{
+    box-shadow: none;
+  }
+
+  .text-counter__description {
+    font-size: 14px;
+  }
+
+  @keyframes arrowMove {
+    to {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-height: 400px){
+    .flex-v-center-container{
+      flex-direction: column;
+    }
+}
+
+@media (max-height: 400px) and (max-width: 480px){
+    .container.flex-v-center-container{
+      flex-direction: column;
+    }
+}
+
+@media (max-height: 500px){
+
+  .slider__content .slider__navigation{
+    bottom: 15px;
+  }
+}
+/* End */
+
+
+/* Start:/local/templates/.default/components/bitrix/main.register/.default/style.css?16444986731863*/
+
+
+.auth__form__input.error{
+    border-color: #ffb3b3;
+}
+.auth__form__input.valid{
+    border-color: #85bb86;
+}
+.auth__form__wrap label.error{
+    display: none !important;
+}
+
+.auth__form__input:focus{
+    outline: none;
+}
+
+
+/*Регистрация*/
+.auth__form{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.auth__form:hover{
+    box-shadow: 0 11px 15px rgba(94, 92, 116, 0.3), 0 1px 3px rgba(94, 92, 116, 0.13);
+}
+
+.auth__form__wrap{
+    padding: 30px 4vw;
+}
+
+.auth__form__input{
+    width: 100%;
+    clear: both;
+    margin: 8px 0;
+    height: 50px;
+    line-height: 40px;
+    padding: 0 15px;
+    border: 1px solid #f1f4f7;
+    background-color: #f1f4f7 !important;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #5e5c74;
+    font-size: 1.1em;
+}
+
+.auth__button {
+    width: 100%;
+    min-width: 100%;
+}
+
+.auth__form__link{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.auth__form__title {
+    text-align: center;
+    color: #5e5c74;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 20px 0;
+}
+
+.auth__form__link.forgot__password{
+  font-size: 0.9em;
+    color: #aaaaaa;
+    text-align: right;
+    padding-right: 2px;
+    transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.auth__form__link.forgot__password:hover,
+.auth__form__link.sign__up:hover{
+  opacity: 0.7;
+}
+
+
+.auth__form__link.sign__up{
+  text-align: center;
+    line-height: 45px;
+    background-color: #f1f4f7;
+    border-radius: 5px;
+    color: #5e5c74;
+    transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.font.errortext {
+    color: #ff6d76 !important;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+/*END Регистрация*/
+/* End */
+
+
+/* Start:/local/templates/.default/components/bitrix/socserv.auth.form/.default/style.css?15988097121775*/
+.bx-authform-social-popup{
+	display: none;
+	background: #fff;
+	width: auto;
+	padding: 15px;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.bx-authform-social-popup form{margin-bottom: 0;}
+
+.bx-authform-social-popup input[type="text"]{
+	display: inline-block;
+	max-width: 150px;
+	font-size: 18px;
+	height: 30px;
+	margin: 0;
+	padding: 0 4px;
+	border: 1px solid #CCD5DB;
+	border-radius: 2px;
+	background: #f8fafc;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.bx-authform-social{
+	text-align: center;
+}
+
+.bx-authform-social ul{
+  	padding: 0;
+}
+
+.bx-authform-social ul li{
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.bx-authform-social ul li .bx-authform-social-icon{
+	display: block;
+ 	width: 28px;
+    height: 28px;;
+	background-repeat: no-repeat;
+	border-bottom: none;
+}
+.bx-authform-social ul li .bx-authform-social-icon:hover{opacity: .9;}
+
+
+.bx-authform-social ul li .bx-authform-social-icon.vkontakte{
+	background-image: url('/local/templates/.default/components/bitrix/socserv.auth.form/.default/images/vk.svg');
+}
+
+.bx-authform-social ul li .bx-authform-social-icon.twitter{
+	background-image: url('/local/templates/.default/components/bitrix/socserv.auth.form/.default/images/tw.svg');
+}
+
+.bx-authform-social ul li .bx-authform-social-icon.facebook{
+	background-image: url('/local/templates/.default/components/bitrix/socserv.auth.form/.default/images/fb.svg');
+}
+
+.bx-authform-social ul li .bx-authform-social-icon.google{
+	background-image: url('/local/templates/main/img/google.svg');
+}
+
+.bx-authform-social ul li .bx-authform-social-icon.odnoklassniki{
+	background-image: url('/local/templates/main/img/ok.svg');
+}
+
+    
+
+/* End */
+/* /local/components/harlamoff/home/templates/.default/style.css?16481159577419 */
+/* /local/templates/.default/components/bitrix/main.register/.default/style.css?16444986731863 */
+/* /local/templates/.default/components/bitrix/socserv.auth.form/.default/style.css?15988097121775 */
